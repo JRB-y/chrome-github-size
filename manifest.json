@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Github Repository Size",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Display the size of any public Github repository!",
   "author": "Jrb Youssef <jrb.youssef@gmail.com>",
   "icons": {
