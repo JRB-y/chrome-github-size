@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
   "name": "Github Repository Size",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Display the size of any public Github repository!",
   "author": "Jrb Youssef <jrb.youssef@gmail.com>",
   "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "permissions": [
     "webRequest",
@@ -22,12 +22,12 @@
     ]
   },
   "page_action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup/popup.html",
     "default_icon": {
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   }
 }
