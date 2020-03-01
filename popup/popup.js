@@ -4,7 +4,6 @@ const displayBox = document.getElementById("size-box");
 
 // Get the query of the current tab
 let query = { active: true, currentWindow: true }
-chrome.tabs.query(query, callback)
 
 const callback = async function (tabs) {
   let vendorRepo = vendorReporFormat(tabs);
@@ -17,6 +16,8 @@ const callback = async function (tabs) {
     displayBox.innerHTML = vendorRepo + "<br>" + fileSize(size) :
     displayBox.innerHTML = INVALID_MSG
 }
+
+chrome.tabs.query(query, callback)
 
 const vendorReporFormat = (tabs) => {
   let currentTab = tabs[0]
@@ -33,4 +34,4 @@ const vendorReporFormat = (tabs) => {
 const fileSize = (size) => {
   let i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
   return (size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['kB', 'MB', 'GB', 'TB'][i]
-};
+}
